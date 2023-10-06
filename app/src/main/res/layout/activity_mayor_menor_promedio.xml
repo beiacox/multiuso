@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Mayor Menor y Promedio"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/number1EditText"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_width="127dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/tituloTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:hint="Número 1" />
+
+    <EditText
+        android:id="@+id/number2EditText"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_width="126dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/number1EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Número 2" />
+
+    <EditText
+        android:id="@+id/number3EditText"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_width="126dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/number2EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Número 3" />
+
+    <Button
+        android:id="@+id/calculateStatisticsButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number3EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickCalcularEstadisticas"
+        android:text="Calcular Estadísticas" />
+
+    <TextView
+        android:id="@+id/statisticsTextView"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regresarButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Resultado"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/regresarButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculateStatisticsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:onClick="onClickRegresar"
+        android:text="Regresar" />
+</RelativeLayout>
